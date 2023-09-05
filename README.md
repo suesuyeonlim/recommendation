@@ -36,10 +36,19 @@ The training is done on the [MovieLens](https://grouplens.org/datasets/movielens
   - KNN-w-Means: a basic KNN-based collaborative filtering algorithm that takes into account the mean ratings of each user. It computes the mean values for both item and user ratings and uses them to predict ratings.
 
 ## IV. Training & Result
-  
+  <img width="794" alt="image" src="https://github.com/suesuyeonlim/recommendation/assets/19903898/761668a1-e8e0-48c2-9091-9ae90bdabe85">
+
 ## V. Conclusion
+- Use model-based collaborative filtering.
+  - It gives the best performance.
+  - It scales well once trained.
+See below for comparison between memory-based and model-based collaborative filtering.
+<img width="854" alt="image" src="https://github.com/suesuyeonlim/recommendation/assets/19903898/28031e8c-e1c7-497f-b014-8f22cbb067bd">
+
 
 ## VI. Next Steps
+- Look for ways to gather meaningful predictors for users and movies
+  - E.g., gender, race, etc. for users and features for movies
 
 ## VII. Location of Data/Analysis
 - Data: See "Data" folder. 
