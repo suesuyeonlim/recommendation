@@ -15,17 +15,33 @@ The training is done on the [MovieLens](https://grouplens.org/datasets/movielens
 <img width="394" alt="image" src="https://github.com/suesuyeonlim/recommendation/assets/19903898/9ad75a0f-f6da-4df9-8596-b5ec3a0d369d">
 
 ## III. Models
-- Model-Based Collaborative Filtering
-<img width="780" alt="image" src="https://github.com/suesuyeonlim/recommendation/assets/19903898/f626fb53-f84b-4509-b6d7-16be32deb98a">
+- Model-Based Collaborative Filtering: Model-based matrix factorization separates a rating into a user component and an item component. An item component has factors related to an item, and a user component has sensitivities to those factors. See the diagram below.
 
-- Memory-Based Collaborative Filtering
-<img width="478" alt="image" src="https://github.com/suesuyeonlim/recommendation/assets/19903898/d4dc8eff-b0e7-4fa5-b563-8989f47fe003">
+  ![image](https://github.com/suesuyeonlim/recommendation/assets/19903898/76b99f08-7829-4fa3-b776-00e82602c9d3)
+  
+  - ALS: ALS minimizes errors by alternating between holding the user embedding matrix constant and the item embedding matrix constant.
+    
+    <img width="854" alt="image" src="https://github.com/suesuyeonlim/recommendation/assets/19903898/2a524dd7-1494-4d24-ad04-42e211f8a024">
+
+  - SVD: SVD is a commonly used matrix factorization method. It is decomposed in the following form.
+
+    ![image](https://github.com/suesuyeonlim/recommendation/assets/19903898/61e9c358-482e-4f97-a865-6448796f8153)
+
+- Memory-Based Collaborative Filtering: Memory-based collaborative filtering consists of two approaches: item-based and user-based filtering. Item-based filtering connects users based on the products that they purchased in common, and recommend the products frequently purchased by other similar users. User-based filtering finds users that are most similar based on the purchases, and recommend products purchased by the similar user.
+
+  <img width="478" alt="image" src="https://github.com/suesuyeonlim/recommendation/assets/19903898/d4dc8eff-b0e7-4fa5-b563-8989f47fe003">
+
+  - KNN-Basic: a basic KNN-based collaborative filtering algorithm that utilizes distance measurements between samples and other data points in a dataset to predict ratings. It identifies the K-nearest neighbors and utilizes majority voting to make rating predictions.
+  - KNN-w-Baseline: a basic KNN-based collaborative filtering algorithm that takes into account a baseline rating to discover the functional connections between an input and output for rating prediction.
+  - KNN-w-Means: a basic KNN-based collaborative filtering algorithm that takes into account the mean ratings of each user. It computes the mean values for both item and user ratings and uses them to predict ratings.
 
 ## IV. Training & Result
+  
+## V. Conclusion
 
-## V. Next Steps
+## VI. Next Steps
 
-## VI. Location of Data/Analysis
+## VII. Location of Data/Analysis
 - Data: See "Data" folder. 
 - Analysis: See "Code.ipynb". 
 - Analysis Summary: See "Project 3 Presentation.pdf".
