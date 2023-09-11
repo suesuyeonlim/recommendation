@@ -36,6 +36,7 @@ The training is done on the [MovieLens](https://grouplens.org/datasets/movielens
   - KNN-w-Means: a basic KNN-based collaborative filtering algorithm that takes into account the mean ratings of each user. It computes the mean values for both item and user ratings and uses them to predict ratings.
 
 ## IV. Training & Result
+ALS and SVD give better performance than K-nearest neighbor methods in terms of Test Root Mean Squared Errors ("RMSE") and Mean Average Errors ("MAE").
   <img width="794" alt="image" src="https://github.com/suesuyeonlim/recommendation/assets/19903898/761668a1-e8e0-48c2-9091-9ae90bdabe85">
 
 ## V. Conclusion
